@@ -1,14 +1,14 @@
 "use client";
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 // import { HiOutlineMailOpen, HiOutlineLocationMarker } from "react-icons/Hi";
 // import { ImLocation2 } from "react-icons/im";
 
 const Contact = () => {
-  // const [messageSent, setMessageSent] = useState(false);
+  const [messageSent, setMessageSent] = useState(false);
 
-  // useEffect(() => {
-  //   setTimeout(() => setMessageSent(false), 10000);
-  // },[messageSent])
+  useEffect(() => {
+    setTimeout(() => setMessageSent(false), 10000);
+  },[messageSent])
 
   const submitForm = async (e) => {
     e.preventDefault();
@@ -17,24 +17,23 @@ const Contact = () => {
     const company = e.target[1].value;
     const email = e.target[2].value;
     const message = e.target[3].value;
-    console.log(name,company,email,message);
-    console.log(name,company,email,message);
-    console.log(name);
-    // try {
-    //   await fetch("/api/contact", {
-    //     method: "POST",
-    //     body: JSON.stringify({
-    //       name,
-    //       company,
-    //       email,
-    //       message,
-    //     }),
-    //   });
-    //   setMessageSent(true)
-      
-    // } catch (error) {
-    //   console.log(error);
-    // }
+    // console.log(name,company,email,message);
+
+    try {
+      await fetch(`/api/contact`, {
+        method: "POST",
+        body: JSON.stringify({
+          name,
+          company,
+          email,
+          message,
+        }),
+      });
+      setMessageSent(true)
+      e.target.reset()
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -127,7 +126,7 @@ const Contact = () => {
               Send Message
             </button>
           </div>
-              {/* {messageSent && <h1 className="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 mt-5">message successfully sent</h1>} */}
+              {messageSent && <h1 className="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 mt-5">message successfully sent</h1>}
         </form>
       </div>
     </div>

@@ -18,7 +18,7 @@ export const GET = async (request) => {
     const body = await request.json();
   
     const newContact = new Contact(body);
-  
+    // console.log(newContact);
     try {
       await connect();
   
