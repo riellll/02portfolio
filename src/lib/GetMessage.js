@@ -1,7 +1,7 @@
 
 
 export default async function GetMessage() {
-    const res = await fetch(`http://127.0.0.1:3000/api/contact`,  { next: { revalidate: 10 } })
+    const res = await fetch(`https://02portfolio.vercel.app/api/contact`,  { next: { revalidate: 10 } })
     // The return value is *not* serialized
     // You can return Date, Map, Set, etc.
    
