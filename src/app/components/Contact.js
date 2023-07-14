@@ -17,7 +17,7 @@ const Contact = () => {
     const company = e.target[1].value;
     const email = e.target[2].value;
     const message = e.target[3].value;
-    // console.log(name,company,email,message);
+    // console.log(`${process.env.API_URL}`);
 
     try {
       await fetch(`/api/contact`, {
