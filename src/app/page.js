@@ -2,6 +2,7 @@
 import About from './components/About'
 import Contact from './components/Contact'
 import Hero from './components/Hero'
+import Navbar from './components/Navbar'
 import Project from './components/Project'
 import TechStack from './components/TechStack'
 
@@ -12,9 +13,9 @@ export default function Home() {
       <Hero/>
     </section>
 
-    <section id="tech-stack">
+{/*     <section id="tech-stack">
       <TechStack/>
-    </section>
+    </section> */}
 
    <section id="about">
       <About/>

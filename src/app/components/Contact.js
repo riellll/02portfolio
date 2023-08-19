@@ -5,10 +5,14 @@ import { useEffect, useState } from "react";
 
 const Contact = () => {
   const [messageSent, setMessageSent] = useState(false);
+  const [messageErr, setMessageErr] = useState(false);
 
   useEffect(() => {
     setTimeout(() => setMessageSent(false), 10000);
   },[messageSent])
+  useEffect(() => {
+    setTimeout(() => setMessageErr(false), 10000);
+  },[messageErr])
 
   const submitForm = async (e) => {
     e.preventDefault();
@@ -20,7 +24,7 @@ const Contact = () => {
     // console.log(`${process.env.API_URL}`);
 
     try {
-      await fetch(`/api/contact`, {
+     const res = await fetch(`/api/contact`, {
         method: "POST",
         body: JSON.stringify({
           name,
@@ -29,6 +33,11 @@ const Contact = () => {
           message,
         }),
       });
+      if(!res.ok){
+        console.log(res.status);
+        setMessageErr(true)
+        throw new Error("Faild to send request" + res.status);
+      }
       setMessageSent(true)
       e.target.reset()
     } catch (error) {
@@ -121,12 +130,13 @@ const Contact = () => {
           <div className="flex items-start mt-6">
             <button
               type="submit"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
               Send Message
             </button>
           </div>
               {messageSent && <h1 className="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 mt-5">message successfully sent</h1>}
+              {messageErr && <h1 className="bg-red-50 border border-red-500 text-red-900 dark:text-red-400 mt-5">faild to send message</h1>}
         </form>
       </div>
     </div>

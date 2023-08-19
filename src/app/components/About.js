@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="grid bg-white h-full gap-4 content-start justify-items-start mt-10 lg:px-32 md:px-16 md:mb-20 sm:px-10 sm:mb-20">
+    <div className="grid bg-white h-screen gap-4 content-start pt-10 justify-items-start lg:px-32 md:px-16 md:mb-20 sm:px-10 sm:mb-20">
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
         ABOUT ME
       </h1>

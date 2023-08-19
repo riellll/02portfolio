@@ -14,7 +14,7 @@ import mySQL from "@/tech_stack_pic/sql.png"
 
 const TechStack = () => {
   return (
-    <div className="text-center">
+    <div className="flex flex-col gap-4 text-center">
       <div className="flex justify-center place-items-center">
         <h1 className="flex flex-wrap border-b-2 border-b-cyan-800 text-lg font-semibold">
           Tech Stack
@@ -31,8 +31,8 @@ const TechStack = () => {
         <Image src={mongodbLogo} alt="mongodb" width={1000} height={1000} className="w-14 h-auto" priority />
         <Image src={nodejsLogo} alt="nodejs" width={1000} height={1000} className="w-16 h-auto" priority />
         <Image src={phpLogo} alt="php" width={1000} height={1000} className="w-16 h-auto" priority />
-        <Image src={laravelLogo} alt="laravel" width={1000} height={1000} className="w-16 h-auto" priority />
-        <Image src={mySQL} alt="mySQL" width={1000} height={1000} className="w-16 h-auto" priority />
+        <Image src={laravelLogo} alt="laravel" width={1000} height={1000} className="w-14 h-auto" priority />
+        <Image src={mySQL} alt="mySQL" width={1000} height={1000} className="w-14 h-auto" priority />
       </div>
     </div>
   );
