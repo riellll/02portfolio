@@ -9,7 +9,7 @@ export const metadata = {
 
 const Message = async () => {
   const data = await GetMessage();
-    console.log(data);
+    // console.log(data);
 
   return (
     <div>
@@ -29,7 +29,7 @@ const Message = async () => {
               Name: {item.name}
             </h5>
             <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
-              Company: {item.company}
+              Company: {item.company && item.company}
             </h5>
             <h5 className="mb-3 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
               Email: {item.email}

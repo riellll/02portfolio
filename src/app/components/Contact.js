@@ -18,9 +18,8 @@ const Contact = () => {
     e.preventDefault();
     // console.log(e.target[0].value);
     const name = e.target[0].value;
-    const company = e.target[1].value;
-    const email = e.target[2].value;
-    const message = e.target[3].value;
+    const email = e.target[1].value;
+    const message = e.target[2].value;
     // console.log(`${process.env.API_URL}`);
 
     try {
@@ -28,7 +27,6 @@ const Contact = () => {
         method: "POST",
         body: JSON.stringify({
           name,
-          company,
           email,
           message,
         }),
@@ -46,7 +44,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="grid bg-white h-full gap-10 lg:mt-20 content-center justify-items-center text-center lg:px-32 md:px-16 md:mb-20 sm:px-10 sm:mb-20">
+    <div className="grid bg-white h-full gap-10 pt-10 lg:mt-20 content-center justify-items-center text-center lg:px-32 md:px-16 md:mb-20 sm:px-10 sm:mb-20">
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
         CONTACT ME
       </h1>
@@ -80,7 +78,7 @@ const Contact = () => {
               required
             />
           </div>
-          <div className="mb-6">
+{/*           <div className="mb-6">
             <label
               htmlFor="company"
               className="flex items-start mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -95,7 +93,7 @@ const Contact = () => {
               autoComplete="on"
               required
             />
-          </div>
+          </div> */}
           <div className="mb-6">
             <label
               htmlFor="email"

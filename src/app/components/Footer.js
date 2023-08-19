@@ -43,10 +43,10 @@ const Footer = () => {
               . All Rights Reserved.
             </span>
             <span className="flex gap-2 text-xl pb-2 sm:text-start">
-              <Link href={"#"}>
+              <Link href={'https://github.com/riellll'} target="_blank">
                 <BsGithub />
               </Link>
-              <Link href={"#"}>
+              <Link href={'https://www.linkedin.com/in/gabriel-noe-napiere-88009525a/'} target="_blank">
                 <BsLinkedin />
               </Link>
             </span>
