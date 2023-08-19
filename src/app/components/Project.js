@@ -24,7 +24,7 @@ const Project = () => {
           <h1 className="text-xl font-bold">Cinezone</h1>
           <p className="text-1xl font-medium text-gray-900 dark:text-white">
             {" "}
-            Dive into an extensive and ever-growing collection of movies from
+            Dive into an extensive and ever&#45;growing collection of movies from
             different genres, eras, and cultures. a meticulously crafted movie
             collection app that seamlessly combines the power of React and
             Next.js with the vast MovieDB API. you can effortlessly search for
@@ -68,7 +68,7 @@ const Project = () => {
         <div className="flex flex-col justify-center">
           <h1 className="text-xl font-bold">TechStack</h1>
           <p className="text-1xl font-medium text-gray-900 dark:text-white">
-          Dive into the ever-evolving world of technology with TechStack, your go-to app for staying updated on the latest tech news and harnessing the collective wisdom of the tech community. Crafted using cutting-edge technologies, including React and Next.js, and fueled by the TechNews API and Stack Overflow integration, TechStack empowers you to explore, learn, and engage like never before.
+          Dive into the ever&#45;evolving world of technology with TechStack, your go&#45;to app for staying updated on the latest tech news and harnessing the collective wisdom of the tech community. Crafted using cutting&#45;edge technologies, including React and Next.js, and fueled by the TechNews API and Stack Overflow integration, TechStack empowers you to explore, learn, and engage like never before.
           </p>
           <div className="flex justify-center gap-4 pt-3">
             <p className="font-semibold border border-black rounded px-2 shadow-inner shadow-neutral-950/50">
@@ -123,7 +123,7 @@ const Project = () => {
         <div className="flex flex-col justify-center">
           <h1 className="text-xl font-bold">Kodejobs</h1>
           <p className="text-1xl font-medium text-gray-900 dark:text-white">
-          KodeJobs simplifies the hiring process by allowing companies to effortlessly post job openings. Whether you're a startup, an established firm, or anything in between, our platform provides a user-friendly interface to showcase your company and the positions you're looking to fill.
+          KodeJobs simplifies the hiring process by allowing companies to effortlessly post job openings. Whether you&#39;re a startup, an established firm, or anything in between, our platform provides a user&#45;friendly interface to showcase your company and the positions you&#39;re looking to fill.
           </p>
           <div className="flex justify-center gap-4 pt-3">
             <p className="font-semibold border border-black rounded px-2 shadow-inner shadow-neutral-950/50">
