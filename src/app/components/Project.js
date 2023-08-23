@@ -6,12 +6,12 @@ import Link from "next/link";
 
 const Project = () => {
   return (
-    <div className="grid bg-white h-full gap-10 lg:mt-20 content-center justify-items-center text-center lg:px-32 md:px-16 md:mb-20 sm:px-10 sm:mb-20">
+    <div className="grid bg-white gap-10 pt-10 content-center justify-items-center text-center lg:px-32 md:px-16 sm:px-14 min-[320px]:px-8 md:mb-20 sm:mb-20">
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
         PROJECTS
       </h1>
 
-      <div className="grid grid-cols-2 gap-5 py-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 py-5 ">
         <Image
           src={proj1}
           alt="project"
@@ -31,7 +31,7 @@ const Project = () => {
             your favorite films or discover hidden gems that you never knew
             existed.
           </p>
-          <div className="flex justify-center gap-4 pt-3">
+          <div className="flex justify-center gap-4 pt-3 flex-wrap">
             <p className="font-semibold border border-black rounded px-2 shadow-inner shadow-neutral-950/50">
               React
             </p>
@@ -64,13 +64,13 @@ const Project = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-5 py-5">
-        <div className="flex flex-col justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 md: gap-5 py-5">
+        <div className="flex flex-col justify-center order-last md:order-first">
           <h1 className="text-xl font-bold">TechStack</h1>
           <p className="text-1xl font-medium text-gray-900 dark:text-white">
           Dive into the ever&#45;evolving world of technology with TechStack, your go&#45;to app for staying updated on the latest tech news and harnessing the collective wisdom of the tech community. Crafted using cutting&#45;edge technologies, including React and Next.js, and fueled by the TechNews API and Stack Overflow integration, TechStack empowers you to explore, learn, and engage like never before.
           </p>
-          <div className="flex justify-center gap-4 pt-3">
+          <div className="flex justify-center gap-4 pt-3 flex-wrap">
             <p className="font-semibold border border-black rounded px-2 shadow-inner shadow-neutral-950/50">
               React
             </p>
@@ -111,7 +111,7 @@ const Project = () => {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-5 py-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 py-5">
         <Image
           src={proj3}
           alt="project"
@@ -125,7 +125,7 @@ const Project = () => {
           <p className="text-1xl font-medium text-gray-900 dark:text-white">
           KodeJobs simplifies the hiring process by allowing companies to effortlessly post job openings. Whether you&#39;re a startup, an established firm, or anything in between, our platform provides a user&#45;friendly interface to showcase your company and the positions you&#39;re looking to fill.
           </p>
-          <div className="flex justify-center gap-4 pt-3">
+          <div className="flex justify-center gap-4 pt-3 flex-wrap">
             <p className="font-semibold border border-black rounded px-2 shadow-inner shadow-neutral-950/50">
               React
             </p>

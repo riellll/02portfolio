@@ -14,13 +14,13 @@ import mySQL from "@/tech_stack_pic/sql.png"
 
 const TechStack = () => {
   return (
-    <div className="flex flex-col gap-4 text-center">
+    <div className="flex flex-col gap-4 text-center md:px-18 sm:px-12">
       <div className="flex justify-center place-items-center">
         <h1 className="flex flex-wrap border-b-2 border-b-cyan-800 text-lg font-semibold">
           Tech Stack
         </h1>
       </div>
-      <div className="grid grid-flow-col justify-center place-items-center gap-5 border-b-2 border-b-cyan-800 text-black">
+      <div className="flex flex-wrap justify-center place-items-center gap-5 border-b-2 border-b-cyan-800 text-black min-[320px]:px-6">
         <Image src={htmlLogo} alt="html" width={1000} height={1000} className="w-11 h-auto" priority/>
         <Image src={cssLogo} alt="css" width={1000} height={1000} className="w-16 h-auto" priority/>
         <Image src={javascriptlogo} alt="js" width={1000} height={500} className="w-12 h-auto" priority />

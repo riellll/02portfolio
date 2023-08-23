@@ -9,6 +9,7 @@ import TechStack from './components/TechStack'
 export default function Home() {
   return (
     <>
+    <main className='grid'> 
     <section id="hero">
       <Hero/>
     </section>
@@ -28,6 +29,7 @@ export default function Home() {
     <section id="contact">
       <Contact/>
     </section>
+    </main>
   </>
   )
 }

@@ -1,9 +1,9 @@
 const About = () => {
   return (
-    <div className="grid bg-white h-screen gap-4 content-start pt-10 justify-items-start lg:px-32 md:px-16 md:mb-20 sm:px-10 sm:mb-20">
-      <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
+    <div className="grid bg-white h-full gap-4 text-center mb-16 pt-10 lg:px-32 md:px-16 sm:px-16 md:mb-20 min-[320px]:px-10 min-[320px]:pb-48 sm:text-start sm:mb-20">
+      <p className="text-4xl font-bold text-gray-900 dark:text-white">
         ABOUT ME
-      </h1>
+      </p>
       <p className="text-1xl font-medium text-gray-900 dark:text-white">
         Hello there! My name is Gabriel Noe Napiere, and I am passionate about
         programming and technology. I am delighted to have this opportunity to

@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="grid grid-cols-2 bg-white h-full gap-4 content-start justify-items-start mt-10 lg:px-32 md:px-16  sm:px-10">
             <div>
               <h1 className="font-bold">Location</h1>
-              <span className="grid grid-flow-col gap-2 justify-start place-items-center text-center">
+              <span className="grid gap-2 justify-start place-items-start sm:place-items-center sm:grid-flow-col text-center">
                 <span className="text-blue-600 text-xl">
                   <ImLocation2 />
                 </span>
@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
             <div>
               <h1 className="font-bold">Mail</h1>
-              <span className="grid grid-flow-col gap-2 justify-start place-items-center text-center">
+              <span className="grid gap-2 justify-start place-items-start sm:place-items-center sm:grid-flow-col text-center">
                 <span className="text-blue-600 text-xl">
                   <HiOutlineMailOpen />
                 </span>
