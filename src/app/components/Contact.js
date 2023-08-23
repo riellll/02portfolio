@@ -9,10 +9,10 @@ const Contact = () => {
 
   useEffect(() => {
     setTimeout(() => setMessageSent(false), 10000);
-  },[messageSent])
+  }, [messageSent]);
   useEffect(() => {
     setTimeout(() => setMessageErr(false), 10000);
-  },[messageErr])
+  }, [messageErr]);
 
   const submitForm = async (e) => {
     e.preventDefault();
@@ -20,10 +20,10 @@ const Contact = () => {
     const name = e.target[0].value;
     const email = e.target[1].value;
     const message = e.target[2].value;
-    // console.log(`${process.env.API_URL}`);
+    console.log(name, email, message);
 
     try {
-     const res = await fetch(`/api/contact`, {
+      const res = await fetch(`/api/contact`, {
         method: "POST",
         body: JSON.stringify({
           name,
@@ -31,15 +31,16 @@ const Contact = () => {
           message,
         }),
       });
-      if(!res.ok){
+      if (!res.ok) {
         console.log(res.status);
-        setMessageErr(true)
+        setMessageErr(true);
         throw new Error("Faild to send request" + res.status);
       }
-      setMessageSent(true)
-      e.target.reset()
+      setMessageSent(true);
+      e.target.reset();
     } catch (error) {
       console.log(error);
+      throw new Error("Faild to send request" + error);
     }
   };
 
@@ -78,7 +79,7 @@ const Contact = () => {
               required
             />
           </div>
-{/*           <div className="mb-6">
+          {/*           <div className="mb-6">
             <label
               htmlFor="company"
               className="flex items-start mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -129,12 +130,20 @@ const Contact = () => {
             <button
               type="submit"
               className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
+            >
               Send Message
             </button>
           </div>
-              {messageSent && <h1 className="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 mt-5">message successfully sent</h1>}
-              {messageErr && <h1 className="bg-red-50 border border-red-500 text-red-900 dark:text-red-400 mt-5">faild to send message</h1>}
+          {messageSent && (
+            <h1 className="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 mt-5">
+              message successfully sent
+            </h1>
+          )}
+          {messageErr && (
+            <h1 className="bg-red-50 border border-red-500 text-red-900 dark:text-red-400 mt-5">
+              faild to send message
+            </h1>
+          )}
         </form>
       </div>
     </div>
