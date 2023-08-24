@@ -14,11 +14,11 @@ const Message = async ({ searchParams }) => {
   // console.log(data);
 
   return (
-    <div className="h-screen">
+    <div>
       <h1 className="text-4xl text-center font-bold text-gray-900 dark:text-white">
         MESSAGES
       </h1>
-      {!mess && <h1 className="text-center pt-10">Hello There!!!</h1>}
+      {!mess && <h1 className="h-96 text-center pt-10">Hello There!!!</h1>}
       {mess &&
         data.map((item) => {
           // const date = item.createdAt.toDateString()
