@@ -15,11 +15,11 @@ const Navbar = () => {
           </a>      
 
           <div
-            className="w-full min-[620px]:block min-[620px]:w-auto"
+            className="w-full min-[620px]:w-auto"
             id="navbar_default"
           >
-            <ul className="font-medium flex flex-row justify-center p-2 min-[620px]:p-0 mt-4 border border-gray-100 rounded-lg min-[620px]:flex-row min-[620px]:space-x-8 min-[620px]:mt-0 min-[620px]:border-0 min-[620px]:bg-white dark:bg-gray-800 min-[620px]:dark:bg-gray-900 dark:border-gray-700">
-              <li className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white hover:cursor-pointer">
+            <ul className="font-medium flex flex-row justify-center p-2 min-[620px]:p-0 mt-4 rounded-lg min-[620px]:flex-row min-[620px]:space-x-8 min-[620px]:mt-0 min-[620px]:border-0 min-[620px]:bg-white dark:bg-gray-800 min-[620px]:dark:bg-gray-900 dark:border-gray-700">
+              <li className="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:p-0 dark:text-white hover:cursor-pointer">
                 <Link
                   activeClass="active border-b-2 border-y-black"
                   to="hero"
@@ -32,7 +32,7 @@ const Navbar = () => {
                   Home
                 </Link>
               </li>
-              <li className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white hover:cursor-pointer">
+              <li className="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:p-0 dark:text-white hover:cursor-pointer">
                 <Link
                   activeClass="active border-b-2 border-y-black"
                   to="about"
@@ -45,7 +45,7 @@ const Navbar = () => {
                   About
                 </Link>
               </li>
-              <li className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white hover:cursor-pointer">
+              <li className="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:p-0 dark:text-white hover:cursor-pointer">
                 <Link
                   activeClass="active border-b-2 border-y-black"
                   to="project"
@@ -58,7 +58,7 @@ const Navbar = () => {
                   Project
                 </Link>
               </li>
-              <li className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white hover:cursor-pointer">
+              <li className="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:p-0 dark:text-white hover:cursor-pointer">
                 <Link
                   activeClass="active border-b-2 border-y-black"
                   to="contact"
