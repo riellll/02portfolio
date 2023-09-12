@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Project = () => {
   return (
-    <div className="grid bg-white gap-10 pt-10 content-center justify-items-center text-center lg:px-32 md:px-16 sm:px-14 min-[320px]:px-8 md:mb-20 sm:mb-20">
+    <div className="grid bg-white gap-10 pt-10 content-center justify-items-center text-center lg:px-32 md:px-16 sm:px-14 min-[320px]:px-8 min-[320px]:pb-48 md:mb-20 sm:mb-20">
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
         PROJECTS
       </h1>
