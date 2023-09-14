@@ -1,6 +1,7 @@
+import Providers from "@/lib/Providers";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Providers from "./components/providers/providers";
+
 import FloatingAction from "./components/theme/FloatingAction";
 import "./globals.css";
 import StyledComponentsRegistry from "@/lib/AntdRegistry";
