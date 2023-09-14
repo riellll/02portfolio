@@ -1,5 +1,6 @@
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+import Providers from './components/providers/providers'
 import FloatingAction from './components/theme/FloatingAction'
 import './globals.css'
 import StyledComponentsRegistry from '@/lib/AntdRegistry'
@@ -14,14 +15,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" suppressHydrationWarning>
+      <body className='dark:bg-slate-900'>
+        <Providers>
       <StyledComponentsRegistry>
         <Navbar/>
         {children}
         <Footer/>
         <FloatingAction />
         </StyledComponentsRegistry>
+        </Providers>
         </body>
     </html>
   )
