@@ -45,17 +45,17 @@ const Contact = () => {
   };
 
   return (
-    <div className="grid bg-white gap-10 pt-10 lg:mt-20 content-center justify-items-center text-center lg:px-32 md:px-16 md:mb-20 sm:px-10 min-[320px]:px-8 sm:mb-20">
+    <div className="grid bg-white gap-10 pt-10 lg:mt-20 content-center justify-items-center text-center lg:px-32 md:px-16 md:mb-20 sm:px-10 min-[320px]:px-8 sm:mb-20 dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900">
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
         CONTACT ME
       </h1>
       <div className="grid grid-cols-2 gap-5">
         <div className="text-start">
-          <h1 className="text-xl font-bold">Hello,</h1>
-          <p className="font-medium">
+          <h1 className="text-xl font-bold dark:text-gray-300">Hello,</h1>
+          <p className="font-medium dark:text-gray-300">
             Thank you for taking the time to explore my portfolio project.
           </p>
-          <p className="font-medium">
+          <p className="font-medium dark:text-gray-300">
             If you have any questions, feedback, or would like to discuss
             potential collaborations, I would love to hear from you. Please feel
             free to get in touch with me, just fill out the contact form.
@@ -73,7 +73,7 @@ const Contact = () => {
             <input
               type="text"
               id="name"
-              className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+              className="shadow-sm bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg outline-none ring-0 focus:shadow-none focus:outline-none border focus:border-slate-600 focus:ring-0 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-0 dark:focus:border-slate-600 dark:shadow-sm-light"
               placeholder="name..."
               autoComplete="on"
               required
@@ -105,7 +105,7 @@ const Contact = () => {
             <input
               type="email"
               id="email"
-              className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+              className="hadow-sm bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg outline-none ring-0 focus:shadow-none focus:outline-none border focus:border-slate-600 focus:ring-0 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-0 dark:focus:border-slate-600 dark:shadow-sm-light dark:text-gray-300"
               placeholder="name@example.com"
               autoComplete="on"
               required
@@ -121,7 +121,7 @@ const Contact = () => {
           <textarea
             id="message"
             rows="4"
-            className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className="hadow-sm bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg outline-none ring-0 focus:shadow-none focus:outline-none border focus:border-slate-600 focus:ring-0 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-0 dark:focus:border-slate-600 dark:shadow-sm-light dark:text-gray-300"
             placeholder="Leave a comment..."
             autoComplete="on"
             required

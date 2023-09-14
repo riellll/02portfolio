@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="dark:bg-slate-900">
+      <body className="dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900">
         <Providers>
           <StyledComponentsRegistry>
             <Navbar />

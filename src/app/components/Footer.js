@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
-        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-          <div className="grid grid-cols-2 bg-white h-full gap-4 content-start justify-items-start mt-10 lg:px-32 md:px-16  sm:px-10">
+        <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8 dark:bg-gray-900">
+          <div className="grid grid-cols-2 bg-white h-full gap-4 content-start justify-items-start mt-10 lg:px-32 md:px-16 sm:px-10 dark:bg-gray-900">
             <div>
               <h1 className="font-bold">Location</h1>
               <span className="grid gap-2 justify-start place-items-start sm:place-items-center sm:grid-flow-col text-center">
