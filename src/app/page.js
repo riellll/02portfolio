@@ -9,7 +9,7 @@ import TechStack from './components/TechStack'
 export default function Home() {
   return (
     <>
-    <main className='grid'> 
+    <main className='grid mb-24 md:mb-28'> 
     <section id="hero">
       <Hero/>
     </section>

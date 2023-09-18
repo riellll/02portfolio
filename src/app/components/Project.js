@@ -147,7 +147,7 @@ const Project = () => {
           </div>
           <div className="flex justify-center gap-4 pt-10">
             <Link
-              href={"https://kodejobs.vercel.app/"}
+              href={"https://kodejob-2pa9.vercel.app/"}
               target="_blank"
               className="font-semibold rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 hover:shadow-xl hover:shadow-slate-900/40 hover:text-black hover:bg-white dark:shadow-lg dark:bg-black dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100 dark:shadow-gray-950/80"
             >
