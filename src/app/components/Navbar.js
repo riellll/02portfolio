@@ -1,27 +1,22 @@
 "use client";
 import { Link } from "react-scroll";
 
-
-
 const Navbar = () => {
   return (
     <>
       <nav className="bg-white border-gray-200 dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900 shadow-lg sticky top-0">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-xl flex flex-wrap items-center sm:justify-between min-[320px]:justify-center mx-auto p-2 sm:p-4">
           <a href="#" as="home" className="flex items-center">
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Gab dev
             </span>
-          </a>      
+          </a>
 
-          <div
-            className="w-full min-[620px]:w-auto"
-            id="navbar_default"
-          >
-            <ul className="font-medium flex flex-row justify-center p-2 min-[620px]:p-0 mt-4 rounded-lg min-[620px]:flex-row min-[620px]:space-x-8 min-[620px]:mt-0 min-[620px]:border-0 dark:border-slate-700">
+          <div className="w-full min-[620px]:w-auto" id="navbar_default">
+            <ul className="font-medium flex flex-row justify-center sm:p-2 min-[620px]:p-0 sm:mt-2 rounded-lg min-[620px]:flex-row min-[620px]:space-x-8 min-[620px]:-mt-2 min-[620px]:border-0 dark:border-slate-700">
               <li className="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:p-0 dark:text-white hover:cursor-pointer">
                 <Link
-                  activeClass="active border-b-2 border-y-black dark:border-y-gray-400"
+                  activeClass="active border-b-2 border-y-slate-700 dark:border-y-cyan-400"
                   to="hero"
                   spy={true}
                   smooth={true}
@@ -34,7 +29,7 @@ const Navbar = () => {
               </li>
               <li className="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:p-0 dark:text-white hover:cursor-pointer">
                 <Link
-                  activeClass="active border-b-2 border-y-black dark:border-y-gray-400"
+                  activeClass="active border-b-2 border-y-slate-700 dark:border-y-cyan-400"
                   to="about"
                   spy={true}
                   smooth={true}
@@ -47,7 +42,7 @@ const Navbar = () => {
               </li>
               <li className="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:p-0 dark:text-white hover:cursor-pointer">
                 <Link
-                  activeClass="active border-b-2 border-y-black dark:border-y-gray-400"
+                  activeClass="active border-b-2 border-y-slate-700 dark:border-y-cyan-400"
                   to="project"
                   spy={true}
                   smooth={true}
@@ -60,7 +55,7 @@ const Navbar = () => {
               </li>
               <li className="block py-2 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:p-0 dark:text-white hover:cursor-pointer">
                 <Link
-                  activeClass="active border-b-2 border-y-black dark:border-y-gray-400"
+                  activeClass="active border-b-2 border-y-slate-700 dark:border-y-cyan-400"
                   to="contact"
                   spy={true}
                   smooth={true}

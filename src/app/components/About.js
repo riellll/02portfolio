@@ -2,7 +2,7 @@ const About = () => {
   return (
     <div className="grid bg-white h-full gap-4 text-center mb-16 pt-10 lg:px-32 md:px-16 sm:px-16 md:mb-20 min-[320px]:px-10 min-[320px]:pb-48 sm:text-start sm:mb-20 dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900">
       <p className="text-4xl font-bold text-gray-900 dark:text-white">
-        ABOUT ME
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 dark:to-emerald-600 dark:from-cyan-400">ABOUT ME</span>
       </p>
       <p className="text-1xl font-medium text-gray-900 dark:text-gray-300">
         Hello there! My name is Gabriel Noe Napiere, and I am passionate about
