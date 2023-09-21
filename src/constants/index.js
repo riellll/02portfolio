@@ -51,7 +51,7 @@ export const techImage = [
   {
     imgURL: mongodbLogo,
     alt: "mongodb",
-    className: "w-14 h-auto",
+    className: "w-12 h-auto",
   },
   {
     imgURL: nodejsLogo,
@@ -66,12 +66,12 @@ export const techImage = [
   {
     imgURL: laravelLogo,
     alt: "laravel",
-    className: "w-14 h-auto",
+    className: "w-12 h-auto",
   },
   {
     imgURL: mySQL,
     alt: "mySQL",
-    className: "w-14 h-auto",
+    className: "w-12 h-auto",
   },
 
 ];
