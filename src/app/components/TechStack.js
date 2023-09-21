@@ -13,7 +13,7 @@ const TechStack = () => {
       </div>
       <div className="flex flex-wrap justify-center place-items-center gap-5 border-b-2 border-b-gray-600 dark:border-b-cyan-800 text-black min-[320px]:px-6 min-[320px]:pb-1">
         {techImage.map(item => (
-          <Image src={item.imgURL} alt={item.alt} width={1000} height={1000} className={item.className} priority/>
+          <Image src={item.imgURL} alt={item.alt} width={1000} height={1000} className={item.className} key={item.alt} priority/>
         ))}
       </div>
     </div>
