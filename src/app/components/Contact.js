@@ -1,11 +1,13 @@
 "use client";
 import { useEffect, useState } from "react";
+import LoadingButton from "./spinner/LoadingButton";
 // import { HiOutlineMailOpen, HiOutlineLocationMarker } from "react-icons/Hi";
 // import { ImLocation2 } from "react-icons/im";
 
 const Contact = () => {
   const [messageSent, setMessageSent] = useState(false);
   const [messageErr, setMessageErr] = useState(false);
+  const [sendLoading, setSendLoading] = useState(false);
 
   useEffect(() => {
     setTimeout(() => setMessageSent(false), 10000);
@@ -16,6 +18,7 @@ const Contact = () => {
 
   const submitForm = async (e) => {
     e.preventDefault();
+    setSendLoading(true)
     // console.log(e.target[0].value);
     const name = e.target[0].value;
     const email = e.target[1].value;
@@ -34,9 +37,11 @@ const Contact = () => {
       if (!res.ok) {
         console.log(res.status);
         setMessageErr(true);
+        setSendLoading(false)
         throw new Error("Faild to send request" + res.status);
       }
       setMessageSent(true);
+      setSendLoading(false)
       e.target.reset();
     } catch (error) {
       console.log(error);
@@ -47,7 +52,7 @@ const Contact = () => {
   return (
     <div className="grid bg-white gap-10 pt-10 lg:mt-20 content-center justify-items-center text-center lg:px-32 md:px-16 md:mb-30 sm:px-10 min-[320px]:px-8 sm:mb-20 dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900">
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white ">
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 dark:to-emerald-600 dark:from-cyan-400">CONTACT ME</span>
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 dark:to-emerald-600 dark:via-cyan-500 dark:from-cyan-400">CONTACT ME</span>
       </h1>
       <div className="grid grid-cols-2 gap-5">
         <div className="text-start">
@@ -131,16 +136,16 @@ const Contact = () => {
               type="submit"
               className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
-              Send Message
+              {sendLoading ? <LoadingButton/> : 'Send Message'}
             </button>
           </div>
           {messageSent && (
-            <h1 className="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 mt-5">
+            <h1 className="bg-green-50 border rounded border-green-500 text-green-900 dark:text-green-400 dark:bg-slate-700 mt-5">
               message successfully sent
             </h1>
           )}
           {messageErr && (
-            <h1 className="bg-red-50 border border-red-500 text-red-900 dark:text-red-400 mt-5">
+            <h1 className="bg-red-50 border rounded border-red-500 text-red-900 dark:text-red-400 dark:bg-slate-700 mt-5">
               faild to send message
             </h1>
           )}

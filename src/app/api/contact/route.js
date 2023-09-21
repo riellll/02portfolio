@@ -1,5 +1,3 @@
-
-
 import Contact from "@/model/Contact";
 import connect from "@/utils/db";
 import { NextResponse } from "next/server";
@@ -18,7 +16,7 @@ export const GET = async (request) => {
 
 export const POST = async (request) => {
   const body = await request.json();
-  
+
   // console.log(body);
   const newContact = new Contact(body);
   // console.log(newContact);
