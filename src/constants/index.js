@@ -1,15 +1,15 @@
-import htmlLogo from "@/tech_stack_pic/html.png"
-import cssLogo from "@/tech_stack_pic/css.png"
-import javascriptlogo from "@/tech_stack_pic/javascript.png"
-import tailwindLogo from "@/tech_stack_pic/tailwind.png"
-import reactLogo from "@/tech_stack_pic/react.png"
+import htmlLogo from "@/tech_stack_pic/htmll.svg"
+import cssLogo from "@/tech_stack_pic/css.svg"
+import javascriptlogo from "@/tech_stack_pic/javascript.svg"
+import tailwindLogo from "@/tech_stack_pic/tailwind.svg"
+import reactLogo from "@/tech_stack_pic/react.svg"
 import nextjsLogo from "@/tech_stack_pic/next-js-icon.svg"
-import expressLogo from "@/tech_stack_pic/express.png"
-import mongodbLogo from "@/tech_stack_pic/mongodb.png"
-import nodejsLogo from "@/tech_stack_pic/nodejs.png"
-import phpLogo from "@/tech_stack_pic/php.png"
-import laravelLogo from "@/tech_stack_pic/laravel.png"
-import mySQL from "@/tech_stack_pic/sql.png"
+import expressLogo from "@/tech_stack_pic/express.svg"
+import mongodbLogo from "@/tech_stack_pic/mongodb.svg"
+import nodejsLogo from "@/tech_stack_pic/nodejs.svg"
+import phpLogo from "@/tech_stack_pic/php.svg"
+import laravelLogo from "@/tech_stack_pic/laravel.svg"
+import mySQL from "@/tech_stack_pic/sqll.svg"
 
 
 export const techImage = [
@@ -21,7 +21,7 @@ export const techImage = [
   {
     imgURL: cssLogo,
     alt: "css",
-    className: "w-16 h-auto",
+    className: "w-11 h-auto",
   },
   {
     imgURL: javascriptlogo,
