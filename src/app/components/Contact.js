@@ -110,7 +110,7 @@ const Contact = () => {
             <input
               type="email"
               id="email"
-              className="hadow-sm bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg outline-none ring-0 focus:shadow-none focus:outline-none border focus:border-slate-600 focus:ring-0 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-0 dark:focus:border-slate-600 dark:shadow-sm-light dark:text-gray-300"
+              className="hadow-sm bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg outline-none ring-0 focus:shadow-none focus:outline-none border focus:border-slate-600 focus:ring-0 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-0 dark:focus:border-slate-600 dark:shadow-sm-light"
               placeholder="name@example.com"
               autoComplete="on"
               required
@@ -126,7 +126,7 @@ const Contact = () => {
           <textarea
             id="message"
             rows="4"
-            className="hadow-sm bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg outline-none ring-0 focus:shadow-none focus:outline-none border focus:border-slate-600 focus:ring-0 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-0 dark:focus:border-slate-600 dark:shadow-sm-light dark:text-gray-300"
+            className="hadow-sm bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg outline-none ring-0 focus:shadow-none focus:outline-none border focus:border-slate-600 focus:ring-0 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-0 dark:focus:border-slate-600 dark:shadow-sm-light"
             placeholder="Leave a comment..."
             autoComplete="on"
             required

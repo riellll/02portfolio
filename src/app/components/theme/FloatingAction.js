@@ -16,7 +16,7 @@ const FloatingAction = () => {
     return null
   }
 
-console.log(resolvedTheme)
+// console.log(resolvedTheme)
   return (
     <div className="sticky bottom-2 text-end m-3">
     <button type="button" 

@@ -6,11 +6,11 @@ export const metadata = {
 };
 
 const Message = async ({ searchParams }) => {
+  const data = await GetMessage();
   let mess = false;
   if (searchParams.pass === process.env.SEARCHPASS) {
     mess = true;
   }
-  const data = await GetMessage();
   // console.log(data);
 
   return (
