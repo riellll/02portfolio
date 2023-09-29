@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="max-w-screen-xl flex flex-wrap items-center sm:justify-between min-[320px]:justify-center mx-auto p-2 sm:p-4">
           <a href="#" as="home" className="flex items-center">
             <h1 className="self-center text-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              gab.<span className="text-cyan-500">dev</span>
+              gab.<span className="text-black dark:text-cyan-500">dev</span>
             </h1>
           </a>
 
