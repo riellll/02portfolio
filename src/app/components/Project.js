@@ -8,7 +8,7 @@ const Project = () => {
   return (
     <div className="grid bg-white gap-10 pt-10 content-center justify-items-center text-center lg:px-32 md:px-16 sm:px-14 min-[320px]:px-8 min-[320px]:pb-48 md:mb-20 sm:mb-20 dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900">
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 dark:to-emerald-600 dark:via-cyan-500 dark:from-cyan-400">PROJECT</span>
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 dark:to-emerald-600 dark:via-cyan-500 dark:from-cyan-400">PROJECT</span>
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 py-5">
@@ -21,7 +21,7 @@ const Project = () => {
           className="w-full h-auto rounded-xl shadow-xl shadow-slate-900/50 dark:shadow-xl dark:shadow-black"
         />
         <div className="flex flex-col justify-center">
-          <h1 className="text-xl font-bold">Cinezone</h1>
+        <h1 className="text-2xl font-bold"><span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 dark:to-emerald-600 dark:via-cyan-500 dark:from-cyan-400">Cinezone</span></h1>
           <p className="text-1xl font-medium text-gray-900 dark:text-gray-300">
             {" "}
             Dive into an extensive and ever&#45;growing collection of movies from
@@ -49,14 +49,14 @@ const Project = () => {
             <Link
               href={"https://cinezone-sigma.vercel.app/"}
               target="_blank"
-              className="font-semibold rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 hover:shadow-xl hover:shadow-slate-900/40 hover:text-black hover:bg-white dark:shadow-lg dark:bg-black dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100 dark:shadow-gray-950/80"
+              className="font-semibold rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 hover:shadow-xl hover:shadow-slate-900/40 dark:text-black hover:text-black hover:bg-white dark:shadow-lg dark:bg-gradient-to-r dark:from-cyan-500 dark:via-cyan-400 dark:to-emerald-600 dark:hover:bg-gradient-to-br dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100 dark:shadow-gray-950/80"
             >
               See Live
             </Link>
             <Link
               href={"https://github.com/riellll/Cinezone.git"}
               target="_blank"
-              className="font-semibold rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 hover:shadow-xl hover:shadow-slate-900/40 hover:text-black hover:bg-white dark:shadow-lg dark:bg-black dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100 dark:shadow-gray-950/80"
+              className="font-semibold rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 hover:shadow-xl hover:shadow-slate-900/40 dark:text-black hover:text-black hover:bg-white dark:shadow-lg dark:bg-gradient-to-r dark:from-cyan-500 dark:via-cyan-400 dark:to-emerald-600 dark:hover:bg-gradient-to-br dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100 dark:shadow-gray-950/80"
             >
               Source Code
             </Link>
@@ -66,7 +66,7 @@ const Project = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 md: gap-5 py-5">
         <div className="flex flex-col justify-center order-last md:order-first">
-          <h1 className="text-xl font-bold ">TechStack</h1>
+          <h1 className="text-2xl font-bold"><span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 dark:to-emerald-600 dark:via-cyan-500 dark:from-cyan-400">TechStack</span></h1>
           <p className="text-1xl font-medium text-gray-900 dark:text-gray-300">
           Dive into the ever&#45;evolving world of technology with TechStack, your go&#45;to app for staying updated on the latest tech news and harnessing the collective wisdom of the tech community. Crafted using cutting&#45;edge technologies, including React and Next.js, and fueled by the TechNews API and Stack Overflow integration, TechStack empowers you to explore, learn, and engage like never before.
           </p>
@@ -88,14 +88,14 @@ const Project = () => {
             <Link
               href={"https://techstack-ucode.vercel.app/"}
               target="_blank"
-              className="font-semibold rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 hover:shadow-xl hover:shadow-slate-900/40 hover:text-black hover:bg-white dark:shadow-lg dark:bg-black dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100 dark:shadow-gray-950/80"
+              className="font-semibold rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 hover:shadow-xl hover:shadow-slate-900/40 dark:text-black hover:text-black hover:bg-white dark:shadow-lg dark:bg-gradient-to-r dark:from-cyan-500 dark:via-cyan-400 dark:to-emerald-600 dark:hover:bg-gradient-to-br dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100 dark:shadow-gray-950/80"
             >
               See Live
             </Link>
             <Link
               href={"#"}
               // target="_blank"
-              className="font-semibold rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 hover:shadow-xl hover:shadow-slate-900/40 hover:text-black hover:bg-white dark:shadow-lg dark:bg-black dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100 dark:shadow-gray-950/80"
+              className="font-semibold rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 hover:shadow-xl hover:shadow-slate-900/40 dark:text-black hover:text-black hover:bg-white dark:shadow-lg dark:bg-gradient-to-r dark:from-cyan-500 dark:via-cyan-400 dark:to-emerald-600 dark:hover:bg-gradient-to-br dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100 dark:shadow-gray-950/80"
             >
               Source Code
             </Link>
@@ -121,7 +121,7 @@ const Project = () => {
           className="w-full h-auto rounded-xl shadow-xl shadow-slate-900/50 dark:shadow-xl dark:shadow-black"
         />
         <div className="flex flex-col justify-center">
-          <h1 className="text-xl font-bold">Kodejobs</h1>
+        <h1 className="text-2xl font-bold"><span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 dark:to-emerald-600 dark:via-cyan-500 dark:from-cyan-400">Kodejobs</span></h1>
           <p className="text-1xl font-medium text-gray-900 dark:text-gray-300">
           KodeJobs simplifies the hiring process by allowing companies to effortlessly post job openings. Whether you&#39;re a startup, an established firm, or anything in between, our platform provides a user&#45;friendly interface to showcase your company and the positions you&#39;re looking to fill.
           </p>
@@ -149,14 +149,14 @@ const Project = () => {
             <Link
               href={"https://kodejob-2pa9.vercel.app/"}
               target="_blank"
-              className="font-semibold rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 hover:shadow-xl hover:shadow-slate-900/40 hover:text-black hover:bg-white dark:shadow-lg dark:bg-black dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100 dark:shadow-gray-950/80"
+              className="font-semibold rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 hover:shadow-xl hover:shadow-slate-900/40 dark:text-black hover:text-black hover:bg-white dark:shadow-lg dark:bg-gradient-to-r dark:from-cyan-500 dark:via-cyan-400 dark:to-emerald-600 dark:hover:bg-gradient-to-br dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100 dark:shadow-gray-950/80"
             >
-              See Live
+            See Live         
             </Link>
             <Link
               href={"https://github.com/riellll/kodejob.git"}
               target="_blank"
-              className="font-semibold rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 hover:shadow-xl hover:shadow-slate-900/40 hover:text-black hover:bg-white dark:shadow-lg dark:bg-black dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100 dark:shadow-gray-950/80"
+              className="font-semibold rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 hover:shadow-xl hover:shadow-slate-900/40 dark:text-black hover:text-black hover:bg-white dark:shadow-lg dark:bg-gradient-to-r dark:from-cyan-500 dark:via-cyan-400 dark:to-emerald-600 dark:hover:bg-gradient-to-br dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100 dark:shadow-gray-950/80"
             >
               Source Code
             </Link>
