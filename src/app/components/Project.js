@@ -2,6 +2,7 @@ import Image from "next/image";
 import proj1 from "../../../public/proj1.PNG";
 import proj2 from "../../../public/proj2.PNG";
 import proj3 from "../../../public/proj3.PNG";
+import proj4 from "../../../public/proj4.PNG";
 import Link from "next/link";
 
 const Project = () => {
@@ -162,6 +163,56 @@ const Project = () => {
             </Link>
           </div>
         </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 md: gap-5 py-5">
+        <div className="flex flex-col justify-center order-last md:order-first">
+          <h1 className="text-2xl font-bold"><span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 dark:to-emerald-600 dark:via-cyan-500 dark:from-cyan-400">ThreadSync</span></h1>
+          <p className="text-1xl font-medium text-gray-900 dark:text-gray-300">
+          ThreadSync your ultimate creative hub where the power of threaded conversations meets the freedom to share your visual and textual stories effortlessly. ThreadSync combines the best of Twitter&#39;s thread format with a wealth of versatile features, allowing you to post images, text content, engage in meaningful discussions, and keep your profile updated with ease.
+          </p>
+          <div className="flex justify-center gap-4 pt-3 flex-wrap">
+            <p className="font-semibold rounded bg-gray-200 px-2 shadow-inner shadow-neutral-950/50 dark:shadow-neutral-500/50 dark:bg-black">
+              React
+            </p>
+            <p className="font-semibold rounded bg-gray-200 px-2 shadow-inner shadow-neutral-950/50 dark:shadow-neutral-500/50 dark:bg-black">
+              Javascript
+            </p>
+            <p className="font-semibold rounded bg-gray-200 px-2 shadow-inner shadow-neutral-950/50 dark:shadow-neutral-500/50 dark:bg-black">
+              Next.js
+            </p>
+            <p className="font-semibold rounded bg-gray-200 px-2 shadow-inner shadow-neutral-950/50 dark:shadow-neutral-500/50 dark:bg-black">
+              Tailwind
+            </p>
+            <p className="font-semibold rounded bg-gray-200 px-2 shadow-inner shadow-neutral-950/50 dark:shadow-neutral-500/50 dark:bg-black">
+              MongoDB
+            </p>
+          </div>
+          <div className="flex justify-center gap-4 pt-10">
+            <Link
+              href={"https://threadsync.vercel.app/"}
+              target="_blank"
+              className="font-semibold rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 hover:shadow-xl hover:shadow-slate-900/40 dark:text-black hover:text-black hover:bg-white dark:shadow-lg dark:bg-gradient-to-r dark:from-cyan-500 dark:via-cyan-400 dark:to-emerald-600 dark:hover:bg-gradient-to-br dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100 dark:shadow-gray-950/80"
+            >
+              See Live
+            </Link>
+            <Link
+              href={"https://github.com/riellll/threadsync"}
+              target="_blank"
+              className="font-semibold rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 hover:shadow-xl hover:shadow-slate-900/40 dark:text-black hover:text-black hover:bg-white dark:shadow-lg dark:bg-gradient-to-r dark:from-cyan-500 dark:via-cyan-400 dark:to-emerald-600 dark:hover:bg-gradient-to-br dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100 dark:shadow-gray-950/80"
+            >
+              Source Code
+            </Link>
+          </div>
+        </div>
+        <Image
+          src={proj4}
+          alt="project"
+          width={500}
+          height={500}
+          priority={false}
+          className="w-full h-auto rounded-xl shadow-xl shadow-slate-900/50 dark:shadow-xl dark:shadow-black"
+        />
       </div>
     </div>
   );
