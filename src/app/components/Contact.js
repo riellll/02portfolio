@@ -110,7 +110,7 @@ const Contact = () => {
             <input
               type="email"
               id="email"
-              className="hadow-sm bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg outline-none ring-0 focus:shadow-none focus:outline-none border focus:border-slate-600 focus:ring-0 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-0 dark:focus:border-slate-600 dark:shadow-sm-light"
+              className="shadow-sm bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg outline-none ring-0 focus:shadow-none focus:outline-none border focus:border-slate-600 focus:ring-0 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-0 dark:focus:border-slate-600 dark:shadow-sm-light"
               placeholder="name@example.com"
               autoComplete="on"
               required
@@ -126,15 +126,16 @@ const Contact = () => {
           <textarea
             id="message"
             rows="4"
-            className="hadow-sm bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg outline-none ring-0 focus:shadow-none focus:outline-none border focus:border-slate-600 focus:ring-0 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-0 dark:focus:border-slate-600 dark:shadow-sm-light"
+            className="shadow-sm bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg outline-none ring-0 focus:shadow-none focus:outline-none border focus:border-slate-600 focus:ring-0 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-0 dark:focus:border-slate-600 dark:shadow-sm-light"
             placeholder="Leave a comment..."
             autoComplete="on"
             required
           ></textarea>
-          <div className="flex items-start mt-6">
+          <div className="flex mt-6">
             <button
               type="submit"
-              className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className={`font-semibold grow rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 ${!sendLoading && `hover:shadow-xl hover:shadow-slate-900/40 hover:bg-slate-950`} dark:text-black dark:shadow-lg dark:bg-gradient-to-r dark:from-cyan-500 dark:via-cyan-400 dark:to-emerald-600 ${!sendLoading && 'dark:hover:bg-gradient-to-br dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100'} dark:shadow-gray-950/80`}
+              disabled={sendLoading && true}
             >
               {sendLoading ? <LoadingButton/> : 'Send Message'}
             </button>

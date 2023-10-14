@@ -180,7 +180,7 @@ const Project = () => {
             </p>
             <p className="font-semibold rounded bg-gray-200 px-2 shadow-inner shadow-neutral-950/50 dark:shadow-neutral-500/50 dark:bg-black">
               Next.js
-            </p>
+            </p>  
             <p className="font-semibold rounded bg-gray-200 px-2 shadow-inner shadow-neutral-950/50 dark:shadow-neutral-500/50 dark:bg-black">
               Tailwind
             </p>
