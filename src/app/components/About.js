@@ -5,7 +5,7 @@ import { BsFillFileEarmarkFontFill ,BsGithub, BsLinkedin } from "react-icons/bs"
 
 const About = () => {
   return (
-    <div className="grid md:grid-cols-2 bg-white h-full md:gap-10 text-center mb-16 pt-10 lg:px-32 md:px-16 sm:px-16 md:mb-20 min-[320px]:px-10 min-[320px]:pb-48 sm:text-start sm:mb-20 dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900">
+    <div className="grid md:grid-cols-2 bg-white h-full md:gap-10 mb-16 pt-10 lg:px-32 md:px-16 sm:px-16 md:mb-20 min-[320px]:px-10 min-[320px]:pb-48 sm:text-start sm:mb-20 dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900">
       <Image
         src={aboutMeGif}
         alt="project"
@@ -20,7 +20,10 @@ const About = () => {
           </span>
         </p>
         <p className="text-1xl font-medium text-gray-900 dark:text-gray-300 pb-3">
-        Hello! I&#39;m Gabriel Noe Napiere, and I&#39;m passionate about programming and technology. I recently completed a coding bootcamp, where I gained solid skills in various programming languages and frameworks. I love turning ideas into real, user-friendly applications and staying updated with industry trends. I&#39;m excited to work in a diverse team to create innovative software solutions. Apart from coding, I also appreciate art and music for their creativity and problem-solving benefits.
+        Hello! I&#39;m Gabriel Noe Napiere, and I&#39;m passionate about programming and technology. I recently completed a coding bootcamp, where I gained solid skills in various programming languages and frameworks.
+        </p>
+        <p className="text-1xl font-medium text-gray-900 dark:text-gray-300 pb-3">
+        I love turning ideas into real, user-friendly applications and staying updated with industry trends. I&#39;m excited to work in a diverse team to create innovative software solutions. Apart from coding, I also appreciate art and music for their creativity and problem-solving benefits.
         </p>
         <p className="text-1xl font-medium text-gray-900 dark:text-gray-300">
           Thank you for taking the time to get to know me better. I invite you
@@ -28,7 +31,7 @@ const About = () => {
           projects. If you have any questions or would like to collaborate,
           please feel free to reach out. I look forward to connecting with you!
         </p>
-        <div className="flex justify-center gap-4 pt-10 flex-wrap">
+        <div className="flex justify-center gap-4 pt-3 sm:pt-10 flex-wrap">
         <Link
               href={"https://drive.google.com/file/d/1ZfstMQchKYjGlDkFyk6Gr0WUvF1XUWkT/view?usp=sharing"}
               target="_blank"

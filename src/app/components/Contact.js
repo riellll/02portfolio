@@ -54,7 +54,7 @@ const Contact = () => {
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white ">
       <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 dark:to-emerald-600 dark:via-cyan-500 dark:from-cyan-400">CONTACT ME</span>
       </h1>
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid grid-cols sm:grid-cols-2 gap-5">
         <div className="text-start">
           <h1 className="text-xl font-bold dark:text-gray-300">Hello,</h1>
           <p className="font-medium dark:text-gray-300">
