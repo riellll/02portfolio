@@ -5,7 +5,7 @@ import { BsFillFileEarmarkFontFill ,BsGithub, BsLinkedin } from "react-icons/bs"
 
 const About = () => {
   return (
-    <div className="grid md:grid-cols-2 bg-white h-full md:gap-10 mb-16 pt-10 lg:px-32 md:px-16 sm:px-16 md:mb-20 min-[320px]:px-10 min-[320px]:pb-48 sm:text-start sm:mb-20 dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900">
+    <div className="grid md:grid-cols-2 bg-white h-full md:gap-10 pt-10 lg:px-32 md:px-16 sm:px-16 md:mb-20 min-[320px]:px-10 min-[320px]:pb-48 sm:text-start sm:mb-20 dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900">
       <Image
         src={aboutMeGif}
         alt="project"
