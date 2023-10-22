@@ -6,20 +6,8 @@ import { menuItem, navbarItem } from '@/constants';
 
 const Navbarr = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isActive, setIsActive] = useState('');
+    const [isActive, setIsActive] = useState('hero');
 
-     const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
-  ];
 
 
   return (
