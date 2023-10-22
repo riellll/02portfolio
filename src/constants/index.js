@@ -82,10 +82,3 @@ export const techImage = [
     { value: "project", label: "Project"},
     { value: "contact", label: "Contact"},
   ];
-  
-  export const menuItem = [
-    { value: "hero", label: "Home"},
-    { value: "about", label: "About"},
-    { value: "project", label: "Project"},
-    { value: "contact", label: "Contact"},
-  ];

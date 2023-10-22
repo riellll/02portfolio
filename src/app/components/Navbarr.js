@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Button, NavbarMenuToggle, NavbarMenuItem, NavbarMenu} from "@nextui-org/react";
 import { Link } from "react-scroll";
-import { menuItem, navbarItem } from '@/constants';
+import {navbarItem } from '@/constants';
 
 const Navbarr = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,7 +51,7 @@ const Navbarr = () => {
         ))}
       </NavbarContent>
       <NavbarMenu  className='dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900'>
-        {menuItem.map((item, index) => (
+        {navbarItem.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
               activeClass="active border-b-2 border-y-slate-700 dark:border-y-cyan-400"
