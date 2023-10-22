@@ -50,7 +50,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="grid bg-white sm:gap-10 gap-5 lg:mt-20 content-center justify-items-center text-center lg:px-32 md:px-16 md:mb-30 sm:px-10 min-[320px]:px-8 sm:mb-20 dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900">
+    <div className="grid bg-white sm:gap-10 gap-5 pt-5 lg:mt-20 content-center justify-items-center text-center lg:px-32 md:px-16 md:mb-30 sm:px-10 min-[320px]:px-8 sm:mb-20 dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900">
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white ">
       <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 dark:to-emerald-600 dark:via-cyan-500 dark:from-cyan-400">CONTACT ME</span>
       </h1>
