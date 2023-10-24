@@ -3,22 +3,21 @@ import { useEffect, useState } from "react";
 import LoadingButton from "./spinner/LoadingButton";
 // import { HiOutlineMailOpen, HiOutlineLocationMarker } from "react-icons/Hi";
 // import { ImLocation2 } from "react-icons/im";
+import { useToast } from "@/components/ui/use-toast"
 
 const Contact = () => {
-  const [messageSent, setMessageSent] = useState(false);
   const [messageErr, setMessageErr] = useState(false);
   const [sendLoading, setSendLoading] = useState(false);
+  const { toast } = useToast()
 
-  useEffect(() => {
-    setTimeout(() => setMessageSent(false), 10000);
-  }, [messageSent]);
+
   useEffect(() => {
     setTimeout(() => setMessageErr(false), 10000);
   }, [messageErr]);
 
   const submitForm = async (e) => {
     e.preventDefault();
-    setSendLoading(true)
+    setSendLoading(true);
     // console.log(e.target[0].value);
     const name = e.target[0].value;
     const email = e.target[1].value;
@@ -37,12 +36,14 @@ const Contact = () => {
       if (!res.ok) {
         console.log(res.status);
         setMessageErr(true);
-        setSendLoading(false)
+        setSendLoading(false);
         throw new Error("Faild to send request" + res.status);
       }
-      setMessageSent(true);
-      setSendLoading(false)
+      setSendLoading(false);
       e.target.reset();
+      toast({
+        description: "Your message has been sent.",
+      });
     } catch (error) {
       console.log(error);
       throw new Error("Faild to send request" + error);
@@ -52,11 +53,15 @@ const Contact = () => {
   return (
     <div className="grid bg-white sm:gap-10 gap-5 pt-5 lg:mt-20 content-center justify-items-center text-center lg:px-32 md:px-16 md:mb-30 sm:px-10 min-[320px]:px-8 sm:mb-20 dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900">
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white ">
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 dark:to-emerald-600 dark:via-cyan-500 dark:from-cyan-400">CONTACT ME</span>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 dark:to-emerald-600 dark:via-cyan-500 dark:from-cyan-400">
+          CONTACT ME
+        </span>
       </h1>
       <div className="grid grid-cols sm:grid-cols-2 gap-5">
         <div className="text-start">
-          <h1 className="text-xl font-bold dark:text-gray-300 pb-2 sm:pb-3">Hello,</h1>
+          <h1 className="text-xl font-bold dark:text-gray-300 pb-2 sm:pb-3">
+            Hello,
+          </h1>
           <p className="font-medium dark:text-gray-300">
             Thank you for taking the time to explore my portfolio project.
           </p>
@@ -134,17 +139,18 @@ const Contact = () => {
           <div className="flex mt-6">
             <button
               type="submit"
-              className={`font-semibold grow rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 ${!sendLoading && `hover:shadow-xl hover:shadow-slate-900/40 hover:bg-slate-950`} dark:text-black dark:shadow-lg dark:bg-gradient-to-r dark:from-cyan-500 dark:via-cyan-400 dark:to-emerald-600 ${!sendLoading && 'dark:hover:bg-gradient-to-br dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100'} dark:shadow-gray-950/80`}
+              className={`font-semibold grow rounded-lg py-2 px-3 text-white bg-slate-900 shadow-lg shadow-slate-900/50 ${
+                !sendLoading &&
+                `hover:shadow-xl hover:shadow-slate-900/40 hover:bg-slate-950`
+              } dark:text-black dark:shadow-lg dark:bg-gradient-to-r dark:from-cyan-500 dark:via-cyan-400 dark:to-emerald-600 ${
+                !sendLoading &&
+                "dark:hover:bg-gradient-to-br dark:hover:bg-gray-300 dark:hover:shadow-xl dark:hover:shadow-gray-950/100"
+              } dark:shadow-gray-950/80`}
               disabled={sendLoading && true}
             >
-              {sendLoading ? <LoadingButton/> : 'Send Message'}
+              {sendLoading ? <LoadingButton /> : "Send Message"}
             </button>
           </div>
-          {messageSent && (
-            <h1 className="bg-green-50 border rounded border-green-500 text-green-900 dark:text-green-400 dark:bg-slate-700 mt-5">
-              message successfully sent
-            </h1>
-          )}
           {messageErr && (
             <h1 className="bg-red-50 border rounded border-red-500 text-red-900 dark:text-red-400 dark:bg-slate-700 mt-5">
               faild to send message

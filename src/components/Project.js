@@ -1,8 +1,8 @@
 import Image from "next/image";
-import proj1 from "../../../public/proj1.PNG";
-import proj2 from "../../../public/proj2.PNG";
-import proj3 from "../../../public/proj3.PNG";
-import proj4 from "../../../public/proj4.PNG";
+import proj1 from "../../public/proj1.PNG";
+import proj2 from "../../public/proj2.PNG";
+import proj3 from "../../public/proj3.PNG";
+import proj4 from "../../public/proj4.PNG";
 import Link from "next/link";
 
 const Project = () => {

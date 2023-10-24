@@ -1,5 +1,5 @@
 import Image from "next/image";
-import aboutMeGif from "../../../public/about-me.gif";
+import aboutMeGif from "../../public/about-me.gif";
 import Link from "next/link";
 import { BsFillFileEarmarkFontFill ,BsGithub, BsLinkedin } from "react-icons/bs";
 
