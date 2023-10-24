@@ -26,7 +26,7 @@ const TechStack = () => {
           Tech Stack
         </h1>
       </div>
-      <div className="flex flex-wrap justify-center place-items-center gap-2 sm:gap-5 border-b-2 border-b-gray-600 dark:border-b-cyan-800 text-black min-[320px]:px-0 min-[320px]:pb-1">
+      <div className="flex flex-wrap justify-center place-items-center gap-5 sm:gap-5 border-b-2 border-b-gray-600 dark:border-b-cyan-800 text-black min-[320px]:px-0 min-[320px]:pb-1">
         {techImage.map((item, index) => (
           <motion.div key={item.alt} variants={fadeAnimationVariants} initial='initial' whileInView={'animate'} viewport={{once: true,}} custom={index}>
             <Popover placement="bottom" showArrow={true}>
