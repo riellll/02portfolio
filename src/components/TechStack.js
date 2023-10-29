@@ -44,7 +44,7 @@ const TechStack = () => {
             <Popover placement="bottom" showArrow={true}>
               <PopoverTrigger>
                 <Button
-                  className="h-16 bg-gradient-to-r from-slate-400 via-slate-500 to-slate-600 hover:bg-gradient-to-br dark:bg-gradient-to-r dark:from-neutral-400 dark:via-neutral-500 dark:to-neutral-600 dark:hover:bg-gradient-to-br border-gray-500"
+                  className="h-16 bg-gradient-to-r from-neutral-300 via-neutral-600 to-neutral-700 hover:bg-gradient-to-br dark:bg-gradient-to-r dark:from-slate-400 dark:via-slate-700 dark:to-slate-800 dark:hover:bg-gradient-to-br border-neutral-400 dark:border-gray-500"
                   variant="bordered"
                 >
                   <Image
