@@ -36,7 +36,7 @@ const Navbarr = () => {
         {navbarItem.map(item => (
             <NavbarItem key={item.label} className='cursor-pointer'>
             <Link
-                    activeClass="active border-b-2 border-y-slate-700 dark:border-y-cyan-400"
+                    activeClass="active border-b-2 border-y-slate-700 dark:border-y-cyan-600"
                     to={item.value}
                     spy={true}
                     smooth={true}

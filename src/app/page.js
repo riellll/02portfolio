@@ -12,11 +12,9 @@ export default function Home() {
       <main className="grid mb-24 md:mb-28">
         <section id="hero">
           <Hero />
-        </section>
 
-        {/*     <section id="tech-stack">
-      <TechStack/>
-    </section> */}
+          {/* <TechStack /> */}
+        </section>
 
         <section id="about">
           <About />
