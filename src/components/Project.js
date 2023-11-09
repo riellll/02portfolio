@@ -10,7 +10,7 @@ const Project = () => {
     <div className="grid bg-white gap-14 pt-5 content-center justify-items-center text-center  xl:px-56 md:px-16 sm:px-14 min-[320px]:px-8 min-[320px]:pb-48 md:mb-20 sm:mb-20 dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900">
       <h1 className="flex flex-col place-self-start text-gray-900 dark:text-white sm:pb-5">
       <span className="text-3xl font-bold text-transparent bg-clip-text text-start bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 dark:to-emerald-600 dark:via-cyan-500 dark:from-cyan-400">Projects</span>
-      <span className="text-transparent text-sm sm:text-md bg-clip-text text-start bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 dark:to-emerald-600 dark:via-cyan-500 dark:from-cyan-400">Here are some of the projects I&#39;ve worked on.</span>
+      <span className="text-transparent text-sm sm:text-base bg-clip-text text-start bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 dark:to-emerald-600 dark:via-cyan-500 dark:from-cyan-400">Here are some of the projects I&#39;ve worked on.</span>
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 py-5">
