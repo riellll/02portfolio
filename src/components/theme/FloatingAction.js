@@ -18,12 +18,12 @@ const FloatingAction = () => {
 
 // console.log(resolvedTheme)
   return (
-    <div className="sticky bottom-2 text-end mx-3 z-10">
+    <div className="text-end">
     <button type="button" 
     onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
-    className={`${resolvedTheme === 'dark' ? 'bg-gray-200 hover:bg-gray-300 text-black' : 'bg-gray-800 hover:bg-gray-900 text-white'} focus:ring-gray-300 font-medium text-sm p-3 mr-2 mb-2 dark:bg-gray-200 dark:text-black dark:hover:bg-gray-300 dark:focus:ring-gray-700 dark:border-gray-700 rounded-full`}>
+    className={`focus:ring-gray-300 text-md text-gray-700 hover:text-gray-500 dark:text-gray-300 hover:dark:text-gray-100 dark:focus:ring-gray-700 dark:border-gray-700 rounded-full`}>
         <p>
-          {resolvedTheme === 'dark' ? <BsFillSunFill/> : <BsFillMoonFill/>}
+          {resolvedTheme === 'dark' ? <BsFillSunFill className="text-lg"/> : <BsFillMoonFill/>}
         </p>
         </button>
         </div>

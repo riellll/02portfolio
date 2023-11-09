@@ -89,6 +89,6 @@ export const techImage = [
   export const navbarItem = [
     { value: "hero", label: "Home"},
     { value: "about", label: "About"},
-    { value: "project", label: "Project"},
+    { value: "project", label: "Projects"},
     { value: "contact", label: "Contact"},
   ];

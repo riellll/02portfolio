@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
               {children}
               <Toaster/>
               <Footer />
-              <FloatingAction />
+              {/* <FloatingAction /> */}
             </StyledComponentsRegistry>
           </NextProviders>
         </Providers>

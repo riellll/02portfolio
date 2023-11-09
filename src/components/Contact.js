@@ -4,16 +4,12 @@ import LoadingButton from "./spinner/LoadingButton";
 // import { HiOutlineMailOpen, HiOutlineLocationMarker } from "react-icons/Hi";
 // import { ImLocation2 } from "react-icons/im";
 import { useToast } from "@/components/ui/use-toast"
+import { ToastAction } from "@/components/ui/toast"
 
 const Contact = () => {
-  const [messageErr, setMessageErr] = useState(false);
   const [sendLoading, setSendLoading] = useState(false);
   const { toast } = useToast()
 
-
-  useEffect(() => {
-    setTimeout(() => setMessageErr(false), 10000);
-  }, [messageErr]);
 
   const submitForm = async (e) => {
     e.preventDefault();
@@ -35,8 +31,13 @@ const Contact = () => {
       });
       if (!res.ok) {
         console.log(res.status);
-        setMessageErr(true);
         setSendLoading(false);
+        toast({
+          variant: "destructive",
+          title: "Uh oh! Something went wrong.",
+          description: "faild to send message.",
+          action: <ToastAction altText="Try again">Try again</ToastAction>,
+        })
         throw new Error("Faild to send request" + res.status);
       }
       setSendLoading(false);
@@ -51,10 +52,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="grid bg-white sm:gap-10 gap-5 pt-5 lg:mt-20 content-center justify-items-center text-center lg:px-32 md:px-16 md:mb-30 sm:px-10 min-[320px]:px-8 sm:mb-20 dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900">
-      <h1 className="text-4xl font-bold text-gray-900 dark:text-white ">
+    <div className="grid bg-white sm:gap-10 gap-5 pt-5 xl:px-56 lg:mt-20 content-center justify-items-center text-center md:px-16 md:mb-30 sm:px-10 min-[320px]:px-8 sm:mb-20 dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900">
+      <h1 className="text-3xl font-bold justify-self-start text-gray-900 dark:text-white ">
         <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-800 via-gray-900 to-gray-950 dark:to-emerald-600 dark:via-cyan-500 dark:from-cyan-400">
-          CONTACT ME
+          Contact Me
         </span>
       </h1>
       <div className="grid grid-cols sm:grid-cols-2 gap-5">
@@ -151,11 +152,6 @@ const Contact = () => {
               {sendLoading ? <LoadingButton /> : "Send Message"}
             </button>
           </div>
-          {messageErr && (
-            <h1 className="bg-red-50 border rounded border-red-500 text-red-900 dark:text-red-400 dark:bg-slate-700 mt-5">
-              faild to send message
-            </h1>
-          )}
         </form>
       </div>
     </div>
