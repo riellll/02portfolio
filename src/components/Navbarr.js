@@ -50,7 +50,7 @@ const Navbarr = () => {
                   </Link>
           </NavbarItem>
         ))}
-        <NavbarItem className='cursor-pointer pr-4 sm:pl-4 sm:border-l border-r sm:border-r-0 pt-1.5 border-gray-500  dark:border-gray-700'>
+        <NavbarItem className='pr-4 sm:pl-4 sm:border-l border-r sm:border-r-0 pt-1.5 border-gray-500  dark:border-gray-700'>
             <FloatingAction/>
           </NavbarItem>
           <NavbarMenuToggle

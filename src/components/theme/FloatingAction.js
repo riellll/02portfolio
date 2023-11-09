@@ -18,7 +18,7 @@ const FloatingAction = () => {
 
 // console.log(resolvedTheme)
   return (
-    <div className="text-end">
+    <div className="text-end cursor-pointer">
     <button type="button" 
     onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
     className={`focus:ring-gray-300 text-md text-gray-700 hover:text-gray-500 dark:text-gray-300 hover:dark:text-gray-100 dark:focus:ring-gray-700 dark:border-gray-700 rounded-full`}>
