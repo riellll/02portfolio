@@ -1,4 +1,3 @@
-import Image from "next/image";
 import proj1 from "../../public/proj1.PNG";
 import proj2 from "../../public/proj2.PNG";
 import proj3 from "../../public/proj3.PNG";
@@ -14,12 +13,9 @@ const Project = () => {
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 py-5">
-        <Image
-          src={proj1}
-          alt="project"
-          width={500}
-          height={500}
-          priority={false}
+        <img
+          src={'/proj1.PNG'}
+          alt="project1"
           className="w-full h-full rounded-xl shadow-xl shadow-slate-900/50 dark:shadow-xl dark:shadow-black"
         />
         <div className="flex flex-col justify-center">
@@ -103,23 +99,17 @@ const Project = () => {
             </Link>
           </div>
         </div>
-        <Image
-          src={proj2}
+        <img
+          src={'/proj2.PNG'}
           alt="project"
-          width={500}
-          height={500}
-          priority={false}
           className="w-full h-full rounded-xl shadow-xl shadow-slate-900/50 dark:shadow-xl dark:shadow-black"
         />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 py-5">
-        <Image
-          src={proj3}
+        <img
+          src={'/proj3.PNG'}
           alt="project"
-          width={500}
-          height={500}
-          priority={false}
           className="w-full h-full rounded-xl shadow-xl shadow-slate-900/50 dark:shadow-xl dark:shadow-black"
         />
         <div className="flex flex-col justify-center">
@@ -206,12 +196,9 @@ const Project = () => {
             </Link>
           </div>
         </div>
-        <Image
-          src={proj4}
+        <img
+          src={'/proj4.PNG'}
           alt="project"
-          width={500}
-          height={500}
-          priority={false}
           className="w-full h-full rounded-xl shadow-xl shadow-slate-900/50 dark:shadow-xl dark:shadow-black"
         />
       </div>
