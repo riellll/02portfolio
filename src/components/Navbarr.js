@@ -12,7 +12,7 @@ const Navbarr = () => {
 
 
   return (
-    <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} className='dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900'>
+    <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} className='dark:bg-gradient-to-r dark:from-gray-800 dark:to-slate-900 md:px-16 sm:px-14'>
       <NavbarContent justify="start">
         <NavbarItem>
         <a href="#" as="home" className="flex items-center pr-4">

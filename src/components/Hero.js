@@ -12,7 +12,7 @@ const Hero = () => {
         </span>
       </h1>
       <p className="text-1xl font-medium text-gray-900 dark:text-gray-300">
-        I&#39;m A Full Stack Web Developer. I bring ideas to life through
+        I&#39;m a full stack Web Developer. I bring ideas to life through
         elegant code and intuitive designs. My goal is to deliver seamless,
         responsive, and scalable web applications that not only meet the clients
         needs but also exceed their expectations.

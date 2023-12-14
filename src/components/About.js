@@ -60,7 +60,7 @@ const About = () => {
               <span className='pt-1'>
               <BsLinkedin />
               </span>
-              My LinkdIn
+              My LinkedIn
             </Link>
           </div>
 {/*         <p className="text-1xl font-medium text-gray-900 dark:text-gray-300">
