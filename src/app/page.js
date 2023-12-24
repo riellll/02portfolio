@@ -13,7 +13,6 @@ export default function Home() {
       <main className="grid mb-24 md:mb-28 w-full px-6 sm:px-14">
         <section id="hero">
           <Hero />
-
           {/* <TechStack /> */}
         </section>
 
